@@ -175,26 +175,3 @@ class DecoderCell(nn.Module):
         ouput=f.log_softmax(self.out(output.squeeze(1)),1) #函数squeeze(arg): 表示第arg维的维度值为1，则去掉该维度，否则tensor不变
         return ouput,hidden
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
