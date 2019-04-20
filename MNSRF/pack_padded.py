@@ -62,17 +62,3 @@ print(out.data.size()) #[4,2]
 unpacked=nn_utils.rnn.pad_packed_sequence(out,batch_first=True)
 print(unpacked[0].data.size()) #[2,3,2]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
