@@ -71,24 +71,3 @@ restore_net()
 restore_params()
 plt.show()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

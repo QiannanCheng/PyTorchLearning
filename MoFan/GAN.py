@@ -76,23 +76,3 @@ for step in range(10000):
 plt.ioff()
 plt.show()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

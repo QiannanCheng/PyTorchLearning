@@ -93,22 +93,3 @@ for t in range(500):
 plt.ioff()
 plt.show()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

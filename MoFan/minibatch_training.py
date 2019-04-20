@@ -30,26 +30,3 @@ if __name__ == '__main__':
             #打印数据
             print('Epoch:',epoch,'|Step:',step,'|batch_x:',batch_x.numpy(),'|batch_y:',batch_y.numpy())
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

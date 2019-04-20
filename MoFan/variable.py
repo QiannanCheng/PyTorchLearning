@@ -24,9 +24,3 @@ print(variable)
 print(variable.data)
 print(variable.data.numpy())
 
-
-
-
-
-
-

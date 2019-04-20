@@ -97,8 +97,3 @@ print(test_y[:10].numpy(),'real number')
 #我们需要将这些计算或者数据转移至CPU
 #cpu_data=gpu_data.cpu()
 
-
-
-
-
-

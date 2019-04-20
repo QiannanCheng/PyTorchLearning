@@ -75,27 +75,3 @@ for step in range(100):
 plt.ioff()
 plt.show()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
