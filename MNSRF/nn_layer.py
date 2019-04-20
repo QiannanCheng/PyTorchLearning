@@ -21,7 +21,7 @@ def initialize_out_of_vocab_words(dimension, choice='zero'):
         return np.zeros(shape=dimension)
 
 class EmbeddingLayer(nn.Module):
-    '''Embedding class which unclude only an embedding layer'''
+    '''Embedding class which include only an embedding layer'''
 
     def __init__(self,input_size,config):
         #input_size: vocab_num in vocabulary
@@ -67,7 +67,7 @@ class Encoder(nn.Module):
         self.hidden_size=hidden_size
         self.bidirection=bidirection
         if self.config.model in ['LSTM','GRU']:
-            self.nn=getattr(nn,self.config.model)(self.input_size,self.hidden_size,self.config.nlayers,
+            self.rnn=getattr(nn,self.config.model)(self.input_size,self.hidden_size,self.config.nlayers,
                                                   batch_first=True,dropout=self.config.dropout,
                                                   bidirection=self.bidirection)
         else:
@@ -174,3 +174,27 @@ class DecoderCell(nn.Module):
         #ouput: (batch_size,output_size)
         ouput=f.log_softmax(self.out(output.squeeze(1)),1) #函数squeeze(arg): 表示第arg维的维度值为1，则去掉该维度，否则tensor不变
         return ouput,hidden
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
