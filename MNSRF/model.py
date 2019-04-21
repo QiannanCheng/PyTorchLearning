@@ -56,7 +56,7 @@ class NSRF(nn.Module):
         #query encoding
         #(query_num,max_query_length)->(query_num,max_query_length,emsize)
         embedded_queries=self.embedding(session_queries.view(-1,session_queries.size(-1)))
-        #(query_num,max_query_length,emsize)+(query_num)->(query_num,max_query_lenght,nhid_query*num_direction)
+        #(query_num,max_query_length,emsize)+(query_num)->(query_num,max_query_length,nhid_query*num_direction)
         encoded_queries=self.query_encoder(embedded_queries,session_query_length.view(-1).data.cpu().numpy())
         #(query_num,max_query_length,nhid_query*num_direction)->(query_num,nhid_query*num_direction)
         encoded_queries=self.apply_pooling(encoded_queries,self.config.pool_type)
